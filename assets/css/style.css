@@ -3,3 +3,25 @@
     padding: 0;
     border: border-box ;
 }
+
+section {
+    height: 100%;
+    background-color: #FFE79D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score {
+    color: #2F32C4;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+score h2{
+    font-size: 30px;
+}
+
+score p {
+    text-align: center;
+}
