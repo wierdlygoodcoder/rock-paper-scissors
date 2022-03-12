@@ -10,7 +10,7 @@ section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.score {
+#score {
     color: #2F32C4;
     height: 20vh;
     display: flex;
@@ -18,17 +18,17 @@ section {
     align-items: center;
 }
 
-.score h2{
+#score h2{
     font-size: 30px;
 }
 
-.score p {
+#score p {
     text-align: center;
     padding : 20px;
     font-size: 25px;
 }
 
-.intro{
+#intro{
     color:#2F32C4;
     height: auto;
     display:flex;
@@ -37,32 +37,31 @@ section {
     justify-content: space-around;
 }
 
-.intro h1 {
+#intro h1 {
     font-size: 50px;
 }
 
-.score p {
+#score p {
     text-align: center;
     padding: 10px;
     font-size: 25px;
 }
 
-.intro{
+#intro{
     color:#2f32c4;
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    opacity: 0;
 }
 
-.intro h1{
+#intro h1{
     font-size: 50px;
 }
 
-.intro button,
-.match button{
+#intro button,
+#match button{
     width: 100px;
     height: 50px;
     background: none;
@@ -73,27 +72,27 @@ section {
     cursor: pointer;
 }
 
-.match{
+#match{
     position: absolute;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%)
 }
 
-.winner{
+#winner{
     color: #2F32C4;
     text-align: center;    
     font-size: 50px;
 }
 
-.hands,
-.options {
+#hands,
+#options {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.player-hand{
+#player-hand{
     transform: rotateY(180deg);
 }
 
