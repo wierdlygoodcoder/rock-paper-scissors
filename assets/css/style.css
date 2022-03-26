@@ -10,12 +10,26 @@ section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header{
+    padding: 20px;
+}
+
+
+header > h1{
+    text-align: center;
+
+}
+
 #score {
+    margin: 20px auto;
+    border: 2px dashed white;
+    width: 33%;
     color: #2F32C4;
-    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 3px;
+    position: relative;
 }
 
 #score h2{
@@ -28,6 +42,13 @@ section {
     font-size: 25px;
 }
 
+.badge{
+    background-color: red;
+    color: white;  
+    font-size: 10px;
+    padding: 3px 9px;
+}
+
 #intro{
     color:#2F32C4;
     height: auto;
@@ -35,11 +56,19 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#intro.fade{
+    opacity: 0;
 }
 
 #intro h1 {
     font-size: 50px;
 }
+
+
 
 #score p {
     text-align: center;
@@ -54,14 +83,14 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
 }
 
 #intro h1{
     font-size: 50px;
 }
 
-#intro button,
-#match button{
+#intro button{
     width: 100px;
     height: 50px;
     background: none;
@@ -73,10 +102,7 @@ section {
 }
 
 #match{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%)
+    transform: translate(20px, -615px);
 }
 
 #winner{
@@ -105,3 +131,23 @@ div.fadeIn{
     opacity: 1;
     pointer-events: all;
 }
+
+#rock{
+    background-image: url(../images/rock.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 178px;
+    width: 154px;
+    border: none;
+}
+
+/*button {
+    background-image: url(images/cancel.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* put the height and width of your image here */
+  /*  height: 50px;
+    width: 200px;
+    border: none;
+  }*/
+  

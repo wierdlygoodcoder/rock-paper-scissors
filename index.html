@@ -8,33 +8,40 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1> Rock Paper Scissors</h1>
+    </header>
     <main>
-        <section class="game">
-            <div class="score">
-                <div class="player-score">
+        <section id="game">
+            <div id="score">
+                <div id="player-score" class="scoreNames">
                     <h2>player</h2>
                     <p>0</p>
                 </div>
-                <div class="computer-score">
+                <div id="computer-score"class="scoreNames">
                     <h2>computer</h2>
                     <p>0</p>
+                </div>
+                <div id="lifes">
+                    <h2>lifes</h2>
+                    <p>0</p>
+                </div>
                 </div>
             </div>
 
             <div id="intro">
                 <h1>Rock paper scissors</h1>
-                <button> Lets Play</button>
+                <button id="play"> Lets Play</button>
             </div>
 
-            <div id="match ">
+            <div id="match">
                 <h2 id="winner">Choose an option</h2>
                 <div id="hands">
                     <img id = "player-hand" src="assets/images/rock.png" alt= "">
                     <img id = "computer-hand" src="assets/images/rock.png" alt="">
                 </div>
                 <div class="options">
-                    <button className="button" id="rock">rock</button>
+                    <button className="button" id="rock"></button>
                     <button className="button" id="scissor">scissors</button>
                     <button className="button" id="paper">paper</button>
                 </div>
@@ -44,6 +51,6 @@
     </main>
     <footer></footer>
     
-    <script src="assets/js/script.css"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
