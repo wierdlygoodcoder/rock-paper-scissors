@@ -25,5 +25,5 @@ let intro = document.getElementById('intro')
 
 let match = document.getElementById('match')
     document.getElementById('play').addEventListener('click',function(){
-    match.classList.toggle('fadein');
+    match.classList.toggle('fadeIn');
 })

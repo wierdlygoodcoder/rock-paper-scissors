@@ -15,13 +15,15 @@
         <br>
         <section id="game">
             <div id="score">
-                <div>
+                <div class="scoreboard">
+                    <span>
                     <h2 id="playeridentfier" class="scorenames">player</h2>
                     <p id="playerscore" class="scorenames">0</p>
-                </div>
-                <div>
-                    <h2 id="computeridentfier" class="scorenames">computer</h2>
+                    </span>
+                    <span>
+                     <h2 id="computeridentfier" class="scorenames">computer</h2>
                     <p id="computerscore" class="scorenames">0</p>
+                    </span>
                 </div>
             </div>
             <div id="lifes">
@@ -31,7 +33,7 @@
 
             <div id="intro">
                 <h1>Rock paper scissors</h1>
-                <button id="play"> Lets Play</button>
+                <button class='play' id="play"> Lets Play</button>
             </div>
 
             <div id="match">
@@ -41,11 +43,12 @@
                     <img id = "computer-hand" src="assets/images/rock.png" alt="">
                 </div>
                 <div class="options">
-                    <button className="button" id="rock"></button>
-                    <button className="button" id="scissor">scissors</button>
-                    <button className="button" id="paper">paper</button>
+                    <button class="button" type="submit" id="rock"><img src="assets/images/rock.png"/><a href="https://www.w3schools.com/jsref/event_animationend.asp"></a></button>
+                    <button class="button" id="scissor">scissors</button>
+                    <button class="button" id="paper">paper</button>
                 </div>
             </div>
+
 
         </section>
     </main>

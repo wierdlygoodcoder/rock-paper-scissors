@@ -30,16 +30,11 @@ header > h1{
     align-items: center;
     border-radius: 3px;
     position: relative;
+    top: 20px;
 }
 
 #score h2{
     font-size: 30px;
-}
-
-#score p {
-    text-align: center;
-    padding : 20px;
-    font-size: 25px;
 }
 
 .scorenames{
@@ -49,7 +44,10 @@ header > h1{
     padding: 3px 9px;
     top: 30px;
 }
-
+.scoreboard{
+    display: flex;
+  justify-content: space-between;
+}
 #playeridentfier{
     position: absolute;
     top: 30px;
@@ -117,6 +115,7 @@ header > h1{
 #match{
     transform: translate(20px, -615px);
     opacity: 0;
+    transition: opacity 1s;
 }
 
 #winner{
@@ -141,19 +140,19 @@ div.fadeOut {
     pointer-events: none;
 }
 
-div.fadeIn{
+#match.fadeIn{
     opacity: 1;
     pointer-events: all;
 }
 
-#rock{
-    background-image: url(../images/rock.png);
+ /*button#rock{
+    background: url(../images/rock.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     height: 178px;
     width: 154px;
     border: none;
-}
+}*/
 
 /*button {
     background-image: url(images/cancel.png);
