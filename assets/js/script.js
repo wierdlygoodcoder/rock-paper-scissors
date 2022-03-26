@@ -19,7 +19,11 @@ let choices = {
 
 }
 let intro = document.getElementById('intro')
-document.getElementById('play').addEventListener('click',function(){
+    document.getElementById('play').addEventListener('click',function(){
     intro.classList.toggle('fade');
 })
 
+let match = document.getElementById('match')
+    document.getElementById('play').addEventListener('click',function(){
+    match.classList.toggle('fadein');
+})
