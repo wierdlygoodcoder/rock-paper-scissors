@@ -16,14 +16,13 @@ let choices = {
         'rock':'win',
         'paper':'lose',
     }
-
-}
-let intro = document.getElementById('intro')
+};
+let intro = document.getElementById('intro');
     document.getElementById('play').addEventListener('click',function(){
     intro.classList.toggle('fade');
-})
+});
 
-let match = document.getElementById('match')
+let match = document.getElementById('match');
     document.getElementById('play').addEventListener('click',function(){
     match.classList.toggle('fadeIn');
-})
+});

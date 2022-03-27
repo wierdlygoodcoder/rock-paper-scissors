@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    border: border-box ;
+    border:0;
 }
 
 section {
@@ -24,13 +24,11 @@ header > h1{
     margin: 20px auto;
     border: 2px dashed white;
     width: 33%;
-    color: #2F32C4;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     border-radius: 3px;
     position: relative;
-    top: 20px;
+    top: 50px;
 }
 
 #score h2{
@@ -50,21 +48,21 @@ header > h1{
 }
 #playeridentfier{
     position: absolute;
-    top: 30px;
+    top: 5px;
     left: -55px;
 }
 
 #computeridentfier{
     position: absolute;
-    top: 30px;
+    top: 5px;
     right: -100px;
 }
 
 #intro{
-    color:#2F32C4;
-    height: auto;
     display:flex;
     flex-direction: column;
+    color:#2f32c4;
+    height: 50vh;
     align-items: center;
     justify-content: space-around;
     opacity: 1;
@@ -85,20 +83,6 @@ header > h1{
     text-align: center;
     padding: 10px;
     font-size: 25px;
-}
-
-#intro{
-    color:#2f32c4;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-#intro h1{
-    font-size: 50px;
 }
 
 #intro button{
@@ -145,6 +129,12 @@ div.fadeOut {
     pointer-events: all;
 }
 
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+}
+    
  /*button#rock{
     background: url(../images/rock.png);
     background-repeat: no-repeat;
