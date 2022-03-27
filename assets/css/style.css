@@ -71,6 +71,7 @@ header > h1{
 
 #intro.fade{
     opacity: 0;
+    visibility: hidden;
 }
 
 #intro h1 {
@@ -100,6 +101,7 @@ header > h1{
     transform: translate(20px, -615px);
     opacity: 0;
     transition: opacity 1s;
+    visibility: hidden;
 }
 
 #winner{
@@ -127,12 +129,15 @@ div.fadeOut {
 #match.fadeIn{
     opacity: 1;
     pointer-events: all;
+    visibility: visible;
 }
 
 
 .options{
     display: flex;
     justify-content: space-evenly;
+    top: 10px;
+    margin-top: 75px;
 }
     
  /*button#rock{
