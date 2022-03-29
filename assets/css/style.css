@@ -1,21 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    border:0;
+    border: 0;
 }
 
-section {
-    height: 100vh;
+body {
     background-color: #FFE79D;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+header {
     padding: 20px;
+    background: #252525;
+    color: white;
 }
 
 
-header > h1{
+header>h1 {
     text-align: center;
 
 }
@@ -28,40 +29,48 @@ header > h1{
     justify-content: space-around;
     border-radius: 3px;
     position: relative;
-    top: 50px;
 }
 
-#score h2{
+#score h2 {
     font-size: 30px;
 }
 
-.scorenames{
+.scorenames {
     background-color: red;
-    color: white;  
+    color: white;
     font-size: 10px;
     padding: 3px 9px;
     top: 30px;
 }
-.scoreboard{
+
+.scoreboard {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
 }
-#playeridentfier{
+
+#lifes{
+    position:absolute;
+    right:10%;
+    top: 9%;
+    color: #2f32c4;
+}
+
+#playeridentfier {
     position: absolute;
     top: 5px;
     left: -55px;
 }
 
-#computeridentfier{
+#computeridentfier {
     position: absolute;
     top: 5px;
     right: -100px;
 }
 
-#intro{
-    display:flex;
+#intro {
+    display: flex;
     flex-direction: column;
-    color:#2f32c4;
+    color: #2f32c4;
     height: 50vh;
     align-items: center;
     justify-content: space-around;
@@ -69,7 +78,7 @@ header > h1{
     transition: opacity 1s;
 }
 
-#intro.fade{
+#intro.fade {
     opacity: 0;
     visibility: hidden;
 }
@@ -78,36 +87,41 @@ header > h1{
     font-size: 50px;
 }
 
-
-
 #score p {
     text-align: center;
     padding: 10px;
     font-size: 25px;
 }
 
-#intro button{
+#intro button {
     width: 100px;
     height: 50px;
     background: none;
     border: none;
     color: #FFE79D;
     font-size: 20px;
-    background:#2F32C4;
+    background: #2F32C4;
     cursor: pointer;
 }
 
-#match{
+#match {
     transform: translate(20px, -615px);
     opacity: 0;
     transition: opacity 1s;
     visibility: hidden;
 }
 
-#winner{
+#results {
+    text-align: center;
+    font-size: 250%;
+    color: #2f32c4;
+    font-weight: bold;
+}
+
+#winner {
     color: #2F32C4;
-    text-align: center;    
-    font-size: 50px;
+    text-align: center;
+    font-size: 330%;
 }
 
 #hands,
@@ -115,10 +129,20 @@ header > h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 33%;
 }
 
-#player-hand{
+#player-hand {
     transform: rotateY(180deg);
+    top:15%;
+    left:25%;
+    position: absolute;
+}
+
+#computer-hand{
+    top: 15%;
+    right:25%;
+    position:absolute;
 }
 
 div.fadeOut {
@@ -126,36 +150,17 @@ div.fadeOut {
     pointer-events: none;
 }
 
-#match.fadeIn{
+#match.fadeIn {
     opacity: 1;
     pointer-events: all;
     visibility: visible;
 }
 
 
-.options{
+.options {
     display: flex;
     justify-content: space-evenly;
-    top: 10px;
-    margin-top: 75px;
+    top: 33%;
+    margin-top: 33%;
 }
-    
- /*button#rock{
-    background: url(../images/rock.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 178px;
-    width: 154px;
-    border: none;
-}*/
 
-/*button {
-    background-image: url(images/cancel.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    /* put the height and width of your image here */
-  /*  height: 50px;
-    width: 200px;
-    border: none;
-  }*/
-  
