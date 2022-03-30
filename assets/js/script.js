@@ -16,8 +16,22 @@ function computerChoice(){
 
 function game(userChoice){
     let compChosse =computerChoice();
-    console.log("userChoice =>" + userChoice);
-    console.log("compchosse =>" + compChosse);
+    switch (userChoice + compChosse){
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            console.log("USER WINS.");
+        break;
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
+            console.log("COMPUTER WINS.")
+         break;
+        case "scissorsscissors":
+        case "paperpaper":
+        case "rockrock":
+            console.log("DRAW")
+    }
 }
 
 function main(){
