@@ -29,13 +29,13 @@ function win(userChoice,compChosse) {
 }
 
 function draw(userChoice,compChosse){
-    result_p.innerHTML = `${convertToCapitals(userChoice)} equals ${convertToCapitals(compChosse)}. YOU DRAW`
+    result_p.innerHTML = `${convertToCapitals(userChoice)} equals ${convertToCapitals(compChosse)}. YOU DRAW`;
 }
 
 function lose(userChoice,compChosse){
     computerScore++;
     computerScore_div.innerHTML = computerScore;
-    result_p.innerHTML =`${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`
+    result_p.innerHTML =`${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`;
 }
 
 
@@ -89,13 +89,8 @@ let match = document.getElementById('match');
     match.classList.toggle('fadeIn');
 });
 
-function changeImage() {
-    let image = document.getElementById('player-hand');
-    if(image.src.match("paper")){
-        image.src = "rock.png";
-    }else{
-        image.src = "assets/images/paper.png"
-    
+function changeImage(imgName) 
+    {
+     image = document.getElementById('player-hand');
+        image.src = imgName;  
     }
-    
-}
