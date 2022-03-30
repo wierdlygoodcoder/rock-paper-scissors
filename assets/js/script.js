@@ -11,7 +11,6 @@ let scissors_div = document.getElementById("scissors");
 function computerChoice(){
     let choices =['paper','rock','scissors'];
     let randomnum = Math.floor(Math.random()*choices.length);
-    document.getElementById()
     return choices[randomnum];
 }
 
