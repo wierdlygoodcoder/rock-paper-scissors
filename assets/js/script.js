@@ -1,6 +1,6 @@
 let playerScore = 0;
-let computerscore = 0;
-let userscore_div = document.getElementById("playscore");
+let computerScore = 0;
+let userscore_div = document.getElementById("playerscore");
 let computerScore_div = document.getElementById("computerscore");
 let scoreBoard_div = document.querySelector(".scoreboard");
 let result_div = document.querySelector(".result");
@@ -14,23 +14,38 @@ function computerChoice(){
     return choices [randomnum];
 }
 
+function win(){
+    playerScore++;
+    userscore_div .innerHTML = playerScore;
+    computerScore_div .innerHTML = computerScore
+}
+
+function draw(){
+    console.log("Draw")
+}
+
+function lose(){
+    console.log("lose")
+}
+
+
 function game(userChoice){
     let compChosse =computerChoice();
     switch (userChoice + compChosse){
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-            console.log("USER WINS.");
+            win()
         break;
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-            console.log("COMPUTER WINS.")
+            lose()
          break;
         case "scissorsscissors":
         case "paperpaper":
         case "rockrock":
-            console.log("DRAW")
+            draw()
     }
 }
 
