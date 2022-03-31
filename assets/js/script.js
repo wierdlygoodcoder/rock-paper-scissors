@@ -10,6 +10,9 @@ let scissorsSpan = document.getElementById("scissors");
 let gameOver = 5;
 let playerHand = document.getElementById('player-hand')
 let computerHand = document.getElementById('computer-hand')
+let paper = "assets/images/paper.png"
+let rock = "assets/images/rock.png"
+let scissors = "assets/images/scissors.jpg"
 
 
 function computerChoice(){
@@ -70,19 +73,21 @@ function game(userChoice){
 function main(){
 rockSpan.addEventListener('click', function(){
     game("rock");
-    changeImage('assets/images/rock.png',playerHand );
-    
+    changeImage(rock, playerHand);
+    //changeImage(computerChoice(), computerHand);
 });
 
 paperSpan.addEventListener('click', function(){
     game("paper");
-    changeImage('assets/images/paper.png', playerHand);
+    changeImage(paper, playerHand);
+    //changeImage(computerChoice(), computerHand);
    
 });
 
 scissorsSpan.addEventListener('click', function(){
     game("scissors");
-    changeImage('assets/images/scissors.jpg', playerHand);
+    changeImage(scissors, playerHand);
+   // changeImage(computerChoice(), computerHand);
     
 });
 }
