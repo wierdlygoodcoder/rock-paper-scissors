@@ -134,7 +134,6 @@ header>h1 {
 }
 
 #player-hand {
-    transform: rotateY(180deg);
     top:15%;
     left:25%;
     position: absolute;
@@ -161,7 +160,6 @@ div.fadeOut {
 .options {
     display: flex;
     justify-content: space-evenly;
-    top: 33%;
-    margin-top: 33%;
+    margin-top: 43%;
 }
 

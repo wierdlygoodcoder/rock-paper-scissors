@@ -1,17 +1,23 @@
 let playerScore = 0;
 let computerScore = 0;
-let userscore_div = document.getElementById("playerscore");
-let computerScore_div = document.getElementById("computerscore");
-let scoreBoard_div = document.querySelector(".scoreboard");
-let result_p = document.querySelector(".results > p");
-let paper_div = document.getElementById("paper");
-let rock_div = document.getElementById("rock");
-let scissors_div = document.getElementById("scissors");
+let userscoreDiv = document.getElementById("playerscore");
+let computerScoreDiv = document.getElementById("computerscore");
+let scoreBoardDiv = document.querySelector(".scoreboard");
+let resultP = document.querySelector(".results > p");
+let paperSpan = document.getElementById("paper");
+let rockSpan = document.getElementById("rock");
+let scissorsSpan = document.getElementById("scissors");
+let gameOver = 5;
 
 function computerChoice(){
     let choices =['paper','rock','scissors'];
-    let randomnum = Math.floor(Math.random()*choices.length);
-    return choices[randomnum];
+    let randomNum = Math.floor(Math.random()*choices.length);
+    return choices[randomNum];
+}
+
+function changeImage(imgName) {
+    image = document.getElementById('player-hand');
+        image.src = imgName;  
 }
 
 function convertToCapitals(word) {
@@ -23,19 +29,19 @@ function convertToCapitals(word) {
 
 function win(userChoice,compChosse) {
     playerScore++;
-    userscore_div .innerHTML = playerScore;
-    computerScore_div .innerHTML = computerScore;
-    result_p.innerHTML = `${convertToCapitals(userChoice)} Smashes ${convertToCapitals(compChosse)}. WINNER!!!`;
+    userscoreDiv .innerHTML = playerScore;
+    computerScoreDiv .innerHTML = computerScore;
+    resultP.innerHTML = `${convertToCapitals(userChoice)} Smashes ${convertToCapitals(compChosse)}. WINNER!!!`;
 }
 
 function draw(userChoice,compChosse){
-    result_p.innerHTML = `${convertToCapitals(userChoice)} equals ${convertToCapitals(compChosse)}. YOU DRAW`;
+    resultP.innerHTML = `${convertToCapitals(userChoice)} equals ${convertToCapitals(compChosse)}. YOU DRAW`;
 }
 
 function lose(userChoice,compChosse){
     computerScore++;
-    computerScore_div.innerHTML = computerScore;
-    result_p.innerHTML =`${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`;
+    computerScoreDiv.innerHTML = computerScore;
+    resultP.innerHTML =`${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`;
 }
 
 
@@ -60,37 +66,34 @@ function game(userChoice){
 }
 
 function main(){
-rock_div.addEventListener('click', function(){
+rockSpan.addEventListener('click', function(){
     game("rock");
-  
+    changeImage('assets/images/rock.png');
 });
 
-paper_div.addEventListener('click', function(){
+paperSpan.addEventListener('click', function(){
     game("paper");
+    changeImage('assets/images/paper.png');
    
 });
 
-scissors_div.addEventListener('click', function(){
+scissorsSpan.addEventListener('click', function(){
     game("scissors");
+    changeImage('assets/images/scissors.jpg');
     
 });
 }
 
 main();
 
-
 let intro = document.getElementById('intro');
-    document.getElementById('play').addEventListener('click',function(){
+document.getElementById('play').addEventListener('click',function(){
     intro.classList.toggle('fade');
 });
 
 let match = document.getElementById('match');
-    document.getElementById('play').addEventListener('click',function(){
+document.getElementById('play').addEventListener('click',function(){
     match.classList.toggle('fadeIn');
 });
 
-function changeImage(imgName) 
-    {
-     image = document.getElementById('player-hand');
-        image.src = imgName;  
-    }
+
