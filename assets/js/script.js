@@ -8,6 +8,9 @@ let paperSpan = document.getElementById("paper");
 let rockSpan = document.getElementById("rock");
 let scissorsSpan = document.getElementById("scissors");
 let gameOver = 5;
+let playerHand = document.getElementById('player-hand')
+let computerHand = document.getElementById('computer-hand')
+
 
 function computerChoice(){
     let choices =['paper','rock','scissors'];
@@ -15,9 +18,8 @@ function computerChoice(){
     return choices[randomNum];
 }
 
-function changeImage(imgName) {
-    image = document.getElementById('player-hand');
-        image.src = imgName;  
+function changeImage(imgName, target) {
+        target.src = imgName;  
 }
 
 function convertToCapitals(word) {
@@ -68,18 +70,19 @@ function game(userChoice){
 function main(){
 rockSpan.addEventListener('click', function(){
     game("rock");
-    changeImage('assets/images/rock.png');
+    changeImage('assets/images/rock.png',playerHand );
+    
 });
 
 paperSpan.addEventListener('click', function(){
     game("paper");
-    changeImage('assets/images/paper.png');
+    changeImage('assets/images/paper.png', playerHand);
    
 });
 
 scissorsSpan.addEventListener('click', function(){
     game("scissors");
-    changeImage('assets/images/scissors.jpg');
+    changeImage('assets/images/scissors.jpg', playerHand);
     
 });
 }
