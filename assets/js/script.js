@@ -7,12 +7,9 @@ let resultP = document.querySelector(".results > p");
 let paperSpan = document.getElementById("paper");
 let rockSpan = document.getElementById("rock");
 let scissorsSpan = document.getElementById("scissors");
+let playerHand = document.getElementById('player-hand');
+let computerHand = document.getElementById('computer-hand');
 let gameOver = 5;
-let playerHand = document.getElementById('player-hand')
-let computerHand = document.getElementById('computer-hand')
-let paper = "assets/images/paper.png"
-let rock = "assets/images/rock.png"
-let scissors = "assets/images/scissors.jpg"
 
 
 function computerChoice(){
@@ -22,7 +19,7 @@ function computerChoice(){
 }
 
 function changeImage(imgName, target) {
-        target.src = imgName;  
+    target.src = `assets/images/${imgName}.png`;  
 }
 
 function convertToCapitals(word) {
@@ -52,6 +49,8 @@ function lose(userChoice,compChosse){
 
 function game(userChoice){
     let compChosse = computerChoice();
+    changeImage(userChoice, playerHand);
+    changeImage(compChosse, computerHand);
     switch (userChoice + compChosse){
         case "rockscissors":
         case "paperrock":
@@ -71,25 +70,17 @@ function game(userChoice){
 }
 
 function main(){
-rockSpan.addEventListener('click', function(){
-    game("rock");
-    changeImage(rock, playerHand);
-    //changeImage(computerChoice(), computerHand);
-});
+    rockSpan.addEventListener('click', function(){
+        game("rock");
+    });
 
-paperSpan.addEventListener('click', function(){
-    game("paper");
-    changeImage(paper, playerHand);
-    //changeImage(computerChoice(), computerHand);
-   
-});
+    paperSpan.addEventListener('click', function(){
+        game("paper");
+    });
 
-scissorsSpan.addEventListener('click', function(){
-    game("scissors");
-    changeImage(scissors, playerHand);
-   // changeImage(computerChoice(), computerHand);
-    
-});
+    scissorsSpan.addEventListener('click', function(){
+        game("scissors");
+    });
 }
 
 main();
@@ -103,5 +94,3 @@ let match = document.getElementById('match');
 document.getElementById('play').addEventListener('click',function(){
     match.classList.toggle('fadeIn');
 });
-
-
