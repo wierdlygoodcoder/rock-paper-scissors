@@ -9,8 +9,7 @@ let rockSpan = document.getElementById("rock");
 let scissorsSpan = document.getElementById("scissors");
 let playerHand = document.getElementById('player-hand');
 let computerHand = document.getElementById('computer-hand');
-let gameOver = 5;
-
+let gameOver = 5
 
 function computerChoice(){
     let choices =['paper','rock','scissors'];
@@ -84,6 +83,7 @@ function main(){
 }
 
 main();
+
 
 let intro = document.getElementById('intro');
 document.getElementById('play').addEventListener('click',function(){

@@ -22,7 +22,7 @@ header>h1 {
 }
 
 #score {
-    margin: 20px auto;
+    margin: 1% auto;
     border: 2px dashed white;
     width: 33%;
     display: flex;
@@ -71,7 +71,7 @@ header>h1 {
     display: flex;
     flex-direction: column;
     color: #2f32c4;
-    height: 50vh;
+    height: 30vh;
     align-items: center;
     justify-content: space-around;
     opacity: 1;
@@ -105,10 +105,11 @@ header>h1 {
 }
 
 #match {
-    transform: translate(20px, -615px);
+    transform: translate(0%, -102%);
     opacity: 0;
     transition: opacity 1s;
     visibility: hidden;
+    height:30vh
 }
 
 .results {
@@ -125,23 +126,27 @@ header>h1 {
     font-size: 330%;
 }
 
-#hands,
 #options {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 33%;
+    height: 30vh;
+}
+
+#hands{
+    height: 20vh;
 }
 
 #player-hand {
     top:15%;
-    left:25%;
+    left:23%;
     position: absolute;
 }
 
 #computer-hand{
     top: 15%;
-    right:25%;
+    right:30%;
     position:absolute;
 }
 
@@ -160,6 +165,12 @@ div.fadeOut {
 .options {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 43%;
+    top: 20%;
+    transform: 0%,-100%;
 }
 
+#reset{
+    display: flex;
+    left:50%;
+    transform: 1%,1%;
+}
