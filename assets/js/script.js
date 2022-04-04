@@ -2,14 +2,13 @@ let playerScore = 0;
 let computerScore = 0;
 let userscoreDiv = document.getElementById("playerscore");
 let computerScoreDiv = document.getElementById("computerscore");
-let scoreBoardDiv = document.querySelector(".scoreboard");
 let resultP = document.querySelector(".results > p");
 let paperSpan = document.getElementById("paper");
 let rockSpan = document.getElementById("rock");
 let scissorsSpan = document.getElementById("scissors");
 let playerHand = document.getElementById('player-hand');
 let computerHand = document.getElementById('computer-hand');
-let gameOver = 5
+let gameOver = 5;
 
 function computerChoice(){
     let choices =['paper','rock','scissors'];
@@ -33,6 +32,9 @@ function win(userChoice,compChosse) {
     userscoreDiv .innerHTML = playerScore;
     computerScoreDiv .innerHTML = computerScore;
     resultP.innerHTML = `${convertToCapitals(userChoice)} Smashes ${convertToCapitals(compChosse)}. WINNER!!!`;
+    if (playerScore === gameOver) {
+        gameOverFunction();
+        }
 }
 
 function draw(userChoice,compChosse){
@@ -43,6 +45,9 @@ function lose(userChoice,compChosse){
     computerScore++;
     computerScoreDiv.innerHTML = computerScore;
     resultP.innerHTML =`${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`;
+    if (computerScore === gameOver) {
+        gameOverFunction();
+        }
 }
 
 

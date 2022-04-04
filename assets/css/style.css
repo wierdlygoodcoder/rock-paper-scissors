@@ -34,6 +34,11 @@ header>h1 {
 #score h2 {
     font-size: 30px;
 }
+#score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
 
 .scorenames {
     background-color: red;
@@ -48,12 +53,6 @@ header>h1 {
     justify-content: space-between;
 }
 
-#lifes{
-    position:absolute;
-    right:10%;
-    top: 9%;
-    color: #2f32c4;
-}
 
 #playeridentfier {
     position: absolute;
@@ -87,11 +86,7 @@ header>h1 {
     font-size: 50px;
 }
 
-#score p {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
-}
+
 
 #intro button {
     width: 100px;
@@ -110,6 +105,12 @@ header>h1 {
     transition: opacity 1s;
     visibility: hidden;
     height:30vh
+}
+
+#match.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
 }
 
 .results {
@@ -155,13 +156,6 @@ div.fadeOut {
     pointer-events: none;
 }
 
-#match.fadeIn {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-}
-
-
 .options {
     display: flex;
     justify-content: space-evenly;
@@ -171,6 +165,13 @@ div.fadeOut {
 
 #reset{
     display: flex;
-    left:50%;
-    transform: 1%,1%;
+    position: relative;
+}
+
+#rules{
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    position: sticky;
+    bottom: 0;
 }
