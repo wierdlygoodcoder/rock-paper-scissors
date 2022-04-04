@@ -6,11 +6,13 @@ let resultP = document.querySelector(".results > p");
 let paperSpan = document.getElementById("paper");
 let rockSpan = document.getElementById("rock");
 let scissorsSpan = document.getElementById("scissors");
+let lizardSpan = document.getElementById("lizard");
+let spockSpan = document.getElementById("spock")
 let playerHand = document.getElementById('player-hand');
 let computerHand = document.getElementById('computer-hand');
 let gameOver = 5;
-let modalBtn = document.querySelector(".model-btn");
-let modalBg =document.querySelector(".model-bg");
+let modalBtn = document.querySelector(".rules-btn");
+let modalBg =document.querySelector(".rules-bg");
 let modalClose = document.querySelector(".close");
 
 function computerChoice(){
@@ -26,6 +28,8 @@ function changeImage(imgName, target) {
 function convertToCapitals(word) {
     if (word === "rock") return "Rock";
     if (word === "paper") return "Paper";
+    if (word === "lizard") return "Lizard";
+    if (word === "spock") return "Spock";
     return "Scissors";
 }
 
@@ -67,18 +71,34 @@ function game(userChoice){
     changeImage(compChosse, computerHand);
     switch (userChoice + compChosse){
         case "rockscissors":
+        case "rocklizard":
         case "paperrock":
+        case "paperspock":
         case "scissorspaper":
+        case "scissorlizard":
+        case "lizardpaper":
+        case "lizardspock":
+        case "spockscissor":
+        case "spockrock":
             win(userChoice, compChosse);
         break;
         case "rockpaper":
+        case "rockspock":
         case "paperscissors":
+        case "paperlizard":
         case "scissorsrock":
+        case "scissorspock":
+        case "lizardscissors":
+        case "lizardrock":
+        case "spockpaper":
+        case "spocklizard":
             lose(userChoice, compChosse);
          break;
         case "scissorsscissors":
         case "paperpaper":
         case "rockrock":
+        case "lizardlizard":
+        case "spockspock":
             draw(userChoice, compChosse);
     }
 }
@@ -94,6 +114,14 @@ function main(){
 
     scissorsSpan.addEventListener('click', function(){
         game("scissors");
+    });
+
+    spockSpan.addEventListener('click', function(){
+        game("spock");
+    });
+
+    lizardSpan.addEventListener('click', function(){
+        game("lizard");
     });
 }
 

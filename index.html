@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="rock, paper, scissors, sores, javascript">
+    <meta name="description" content="rock, paper, scissors, scores, javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
 </head>
@@ -16,6 +17,17 @@
     </header>
     <main>
         <section>
+            <div>
+                <div class='rules-btn'><i class="far fa-question-circle"></i></div>
+                    <div class='rules-bg'>
+                        <div class="rules">
+                            <h2>RULES</h2>
+                            <p>Paper covers rock¦ scissors cut paper¦ rock smashes scissors</p>
+                            <p>Winner is first to five</p>
+                            <button class="close">close</button>
+                        </div>
+                    </div>
+            </div>
             <div id="score">
                 <div class="scoreboard">
                     <div>
@@ -37,32 +49,28 @@
                 <h2 id="winner">Choose your DOOM!!</h2>
 
                 <div id="hands">
-                    <img id="player-hand" src="assets/images/rock.png" alt="players choice, picture of a rock , paper or scissors">
-                    <img id="computer-hand" src="assets/images/rock.png" alt="Computers choice, picture of a rock , paper or scissors">
+                    <img id="player-hand" src="assets/images/rock.png" alt="players choice, picture of a rock , paper, scissors, lizard and spock">
+                    <img id="computer-hand" src="assets/images/rock.png" alt="Computers choice, picture of a rock , paper, scissors, lizard and spock">
                 </div>
                 <div class="options">
                     <span class="button" id="rock" ><img src="assets/images/rock.png" alt="picture of a rock for the player to choose"/></span>
                     <span class="button"  id="scissors" ><img src="assets/images/scissors.png" alt="picture of scissors for the player to choose"/></span>
                     <span class="button"  id="paper" ><img src="assets/images/paper.png" alt="picture of paper for the player to choose"/></span>
+                    <span class="button"  id="lizard" ><img src="assets/images/lizard.png" alt="picture of a lizard for the player to choose"/></span>
+                    <span class="button"  id="spock" ><img src="assets/images/spock.png" alt="picture of spock symbol for the player to choose"/></span> 
                 </div>
                 <div class="results">
                     <p></p>
-                    <button class='model-btn'>rules</button>
+
                 </div>
-                <div class='model-bg'>
-                    <div class="modal">
-                        <h2>RULES</h2>
-                        <p>Paper covers rock¦ scissors cut paper¦ rock smashes scissors</p>
-                        <p>Winner is first to five</p>
-                        <button class="close">close</button>
-                    </div>
+
                 </div>
             </div>
 
         </section>
     </main>
 
-    <footer id="rules">
+    <footer>
         
     </footer>
 
