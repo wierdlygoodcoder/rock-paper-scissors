@@ -9,6 +9,9 @@ let scissorsSpan = document.getElementById("scissors");
 let playerHand = document.getElementById('player-hand');
 let computerHand = document.getElementById('computer-hand');
 let gameOver = 5;
+let modalBtn = document.querySelector(".model-btn");
+let modalBg =document.querySelector(".model-bg");
+let modalClose = document.querySelector(".close");
 
 function computerChoice(){
     let choices =['paper','rock','scissors'];
@@ -97,6 +100,7 @@ function main(){
 main();
 
 
+
 let intro = document.getElementById('intro');
 document.getElementById('play').addEventListener('click',function(){
     intro.classList.toggle('fade');
@@ -106,3 +110,12 @@ let match = document.getElementById('match');
 document.getElementById('play').addEventListener('click',function(){
     match.classList.toggle('fadeIn');
 });
+
+modalBtn.addEventListener('click', function(){
+    modalBg.classList.add('bg-active');
+})
+
+modalClose.addEventListener('click', function(){
+    modalBg.classList.remove('bg-active')
+})
+
