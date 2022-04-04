@@ -33,7 +33,7 @@ function win(userChoice,compChosse) {
     computerScoreDiv .innerHTML = computerScore;
     resultP.innerHTML = `${convertToCapitals(userChoice)} Smashes ${convertToCapitals(compChosse)}. WINNER!!!`;
     if (playerScore === gameOver) {
-        gameOverFunction();
+        gameOverFunction('player');
         }
 }
 
@@ -46,10 +46,17 @@ function lose(userChoice,compChosse){
     computerScoreDiv.innerHTML = computerScore;
     resultP.innerHTML =`${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`;
     if (computerScore === gameOver) {
-        gameOverFunction();
+        gameOverFunction('computer');
         }
 }
 
+function gameOverFunction(winner) {
+    alert(`well done ${winner}! The browser will reset have another go.`);
+    setTimeout(() => {
+        location.reload();
+    }, 2000);
+    
+}
 
 function game(userChoice){
     let compChosse = computerChoice();
