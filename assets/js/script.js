@@ -7,7 +7,7 @@ let paperSpan = document.getElementById("paper");
 let rockSpan = document.getElementById("rock");
 let scissorsSpan = document.getElementById("scissors");
 let lizardSpan = document.getElementById("lizard");
-let spockSpan = document.getElementById("spock")
+let spockSpan = document.getElementById("spock");
 let playerHand = document.getElementById('player-hand');
 let computerHand = document.getElementById('computer-hand');
 let gameOver = 5;
@@ -58,11 +58,10 @@ function lose(userChoice, compChosse) {
 }
 
 function gameOverFunction(winner) {
-    alert(`well done ${winner}! The browser will reset have another go.`);
+    alert(`Well done. ${winner}! Click OK to restart the game.`);
     setTimeout(() => {
         location.reload();
     }, 2000);
-
 }
 
 function game(userChoice) {
@@ -128,7 +127,6 @@ function main() {
 main();
 
 
-
 let intro = document.getElementById('intro');
 document.getElementById('play').addEventListener('click', function () {
     intro.classList.toggle('fade');
@@ -141,8 +139,8 @@ document.getElementById('play').addEventListener('click', function () {
 
 modalBtn.addEventListener('click', function () {
     modalBg.classList.add('bg-active');
-})
+});
 
 modalClose.addEventListener('click', function () {
-    modalBg.classList.remove('bg-active')
-})
+    modalBg.classList.remove('bg-active');
+});
