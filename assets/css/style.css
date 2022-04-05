@@ -7,6 +7,9 @@
 body {
     background-color: #FFE79D;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 header {
@@ -34,6 +37,7 @@ header>h1 {
 #score h2 {
     font-size: 30px;
 }
+
 #score p {
     text-align: center;
     padding: 10px;
@@ -117,14 +121,13 @@ header>h1 {
     font-size: 250%;
     color: #2f32c4;
     font-weight: bold;
-    margin-top: 5%;
 }
 
 #winner {
     color: #2F32C4;
     text-align: center;
     font-size: 330%;
-    padding-bottom: 5%;
+
 }
 
 #options {
@@ -137,15 +140,15 @@ header>h1 {
 
 
 #player-hand {
-    top:22%;
-    left:33%;
+    top: 22%;
+    left: 33%;
     position: absolute;
 }
 
-#computer-hand{
+#computer-hand {
     top: 23%;
     right: 33%;
-    position:absolute;
+    position: absolute;
 }
 
 div.fadeOut {
@@ -158,18 +161,13 @@ div.fadeOut {
     justify-content: space-evenly;
 }
 
-#reset{
-    display: flex;
-    position: relative;
-}
-
-.rules-bg{
+.rules-bg {
     position: fixed;
     width: 100%;
-    height:100vh;
+    height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,12 +176,12 @@ div.fadeOut {
     transition: visablity 1s, opacity 0.3s;
 }
 
-.bg-active{
+.bg-active {
     visibility: visible;
     opacity: 1;
 }
 
-.rules{
+.rules {
     background-color: white;
     width: 30%;
     height: 30%;
@@ -191,10 +189,10 @@ div.fadeOut {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-.rules div{
+.rules div {
     width: 100px;
     height: 50px;
     background: none;
@@ -204,13 +202,17 @@ div.fadeOut {
     background: #2F32C4;
     cursor: pointer;
 }
-.rules-btn{
-    position: relative;
+
+.rules-btn {
+    display: flex;
     top: -1%;
-    left:90%;
+    justify-content: end;
+    padding: 4px 120px;
+    align-items: flex-start;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-    .scoreboard{
+    .scoreboard {
         flex-direction: column;
         height: auto;
     }
@@ -220,53 +222,59 @@ div.fadeOut {
         font-size: 20px;
     }
 
-    #score h2{
+    #score h2 {
         font-size: 135%;
     }
 
     #playeridentfier {
         left: -70%;
-        top:1px;
+        top: 1px;
     }
-    
+
     #computeridentfier {
-        right:73%;
-        top:34px;
+        right: 73%;
+        top: 34px;
     }
 
-    #computerscore{
-        right:1%;
+    #computerscore {
+        right: 1%;
     }
 
-    #player-hand{
-        top:25%;
-        left:10%;
-    }
-    #computer-hand{
-        top:25%;
-        left:60%;
+    #player-hand {
+        top: 37%;
+        left: 10%;
     }
 
-    #winner{
+    #computer-hand {
+        top: 37%;
+        left: 60%;
+    }
+
+    #winner {
         text-align: unset;
         font-size: 219%;
     }
-    .button img{
+
+    .button img {
         width: 75%;
         height: auto;
     }
-    #hands img{
+
+    #hands img {
         width: 23%;
         height: auto;
     }
+
     #intro {
-        height: 22vh;
+        height: 30vh;
     }
-    .results{
+
+    .results {
         font-size: 157%;
         margin-top: 1%;
     }
-    .rules-btn{
+
+    .rules-btn {
         left: 73%;
     }
 }
