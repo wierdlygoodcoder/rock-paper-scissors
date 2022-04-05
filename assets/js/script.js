@@ -51,7 +51,7 @@ function draw(userChoice, compChosse) {
 function lose(userChoice, compChosse) {
     computerScore++;
     computerScoreDiv.innerHTML = computerScore;
-    resultP.innerHTML = `${convertToCapitals(userChoice)} obliterates ${convertToCapitals(compChosse)}. LOSER :(`;
+    resultP.innerHTML = `${convertToCapitals(userChoice)} loses to ${convertToCapitals(compChosse)}. LOSER :(`;
     if (computerScore === gameOver) {
         gameOverFunction('computer');
     }
@@ -74,10 +74,10 @@ function game(userChoice) {
         case "paperrock":
         case "paperspock":
         case "scissorspaper":
-        case "scissorlizard":
+        case "scissorslizard":
         case "lizardpaper":
         case "lizardspock":
-        case "spockscissor":
+        case "spockscissors":
         case "spockrock":
             win(userChoice, compChosse);
             break;
@@ -86,7 +86,7 @@ function game(userChoice) {
         case "paperscissors":
         case "paperlizard":
         case "scissorsrock":
-        case "scissorspock":
+        case "scissorsspock":
         case "lizardscissors":
         case "lizardrock":
         case "spockpaper":

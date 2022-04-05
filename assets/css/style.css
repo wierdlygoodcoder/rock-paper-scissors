@@ -39,6 +39,7 @@ header>h1 {
     justify-content: space-around;
     border-radius: 3px;
     position: relative;
+    z-index: -1;
 }
 
 #score h2 {
@@ -52,8 +53,7 @@ header>h1 {
 }
 
 .scorenames {
-    background-color: red;
-    color: white;
+    color: red;
     font-size: 10px;
     padding: 3px 9px;
     top: 30px;
@@ -69,12 +69,14 @@ header>h1 {
     position: absolute;
     top: 5px;
     left: 5px;
+    z-index: -1;
 }
 
 #computeridentfier {
     position: absolute;
     top: 5px;
     right: 5px;
+    z-index: -1;
 }
 
 #intro {
@@ -104,10 +106,10 @@ header>h1 {
     height: 50px;
     background: none;
     border: none;
-    color: #FFE79D;
-    font-size: 20px;
-    background: #2F32C4;
+    color: #2f32c4;
+    font-size: 22px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 #match {
@@ -129,6 +131,7 @@ header>h1 {
     color: #2f32c4;
     font-weight: bold;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 #winner {
@@ -192,7 +195,7 @@ div.fadeOut {
 }
 
 .rules {
-    background-color: white;
+    background-color: #FFE79D;
     min-width: 50vw;
     height: 30%;
     display: flex;
@@ -224,6 +227,7 @@ div.fadeOut {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+
     .scoreboard {
         flex-direction: column;
         height: auto;
@@ -253,12 +257,12 @@ div.fadeOut {
     }
 
     #player-hand {
-        top: 37%;
+        top: 30%;
         left: 10%;
     }
 
     #computer-hand {
-        top: 37%;
+        top: 30%;
         left: 60%;
     }
 
@@ -273,7 +277,7 @@ div.fadeOut {
     }
 
     #hands img {
-        width: 35%;
+        width: 30%;
         height: auto;
     }
 
@@ -290,3 +294,210 @@ div.fadeOut {
         left: 73%;
     }
 }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .scoreboard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #score p {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    #score h2 {
+        font-size: 135%;
+    }
+
+    #playeridentfier {
+        left: 4%;
+        top: 1px;
+    }
+
+    #computeridentfier {
+        right: 50%;
+        top: 34px;
+    }
+
+    #computerscore {
+        right: 1%;
+    }
+
+    #player-hand {
+        top: 35%;
+        left: 20%;
+    }
+
+    #computer-hand {
+        top: 35%;
+        left: 60%;
+    }
+
+    #winner {
+        text-align: unset;
+        font-size: 219%;
+    }
+
+    .button img {
+        width: 75%;
+        height: auto;
+    }
+
+    #hands img {
+        width: 15%;
+        height: auto;
+    }
+
+    #intro {
+        height: 30vh;
+    }
+
+    .results {
+        font-size: 157%;
+        margin-top: 1%;
+    }
+
+    .rules-btn {
+        left: 73%;
+    } 
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .scoreboard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #score p {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    #score h2 {
+        font-size: 135%;
+    }
+
+    #playeridentfier {
+        left: 4%;
+        top: 1px;
+    }
+
+    #computeridentfier {
+        right: 50%;
+        top: 34px;
+    }
+
+    #computerscore {
+        right: 1%;
+    }
+
+    #player-hand {
+        top: 35%;
+        left: 20%;
+    }
+
+    #computer-hand {
+        top: 35%;
+        left: 60%;
+    }
+
+    #winner {
+        text-align: unset;
+        font-size: 219%;
+    }
+
+    .button img {
+        width: 75%;
+        height: auto;
+    }
+
+    #hands img {
+        width: 15%;
+        height: auto;
+    }
+
+    #intro {
+        height: 30vh;
+    }
+
+    .results {
+        font-size: 157%;
+        margin-top: 1%;
+    }
+
+    .rules-btn {
+        left: 73%;
+    } 
+
+ }
+ @media all and (min-width: 1024px) and (max-width: 1280px) { 
+
+    .scoreboard {
+        height: auto;
+    }
+
+    #score p {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    #score h2 {
+        font-size: 135%;
+    }
+
+    #playeridentfier {
+        left: 4%;
+        top: 1px;
+    }
+
+    #computeridentfier {
+        right: 1%;
+        top: 1px;
+    }
+
+    #computerscore {
+        right: 1%;
+    }
+
+    #player-hand {
+        top: 26%;
+        left: 26%;
+    }
+
+    #computer-hand {
+        top: 26%;
+        left: 60%;
+    }
+
+    #winner {
+        text-align: unset;
+        font-size: 219%;
+    }
+
+    .button img {
+        width: 75%;
+        height: auto;
+    }
+
+    #hands img {
+        width: 15%;
+        height: auto;
+    }
+
+    #intro {
+        height: 30vh;
+    }
+
+    .results {
+        font-size: 157%;
+        margin-top: 3%;
+    }
+
+    .rules-btn {
+        left: 73%;
+    } 
+
+ }
