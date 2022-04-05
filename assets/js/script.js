@@ -58,7 +58,7 @@ function lose(userChoice, compChosse) {
 }
 
 function gameOverFunction(winner) {
-    alert(`Well done. ${winner}! Click OK to restart the game.`);
+    alert(`Well done. ${winner}! Click OK/Close to restart the game.`);
     setTimeout(() => {
         location.reload();
     }, 2000);
