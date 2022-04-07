@@ -47,7 +47,6 @@ header>h1 {
 }
 
 #score p {
-    text-align: center;
     padding: 10px;
     font-size: 25px;
 }
@@ -61,7 +60,6 @@ header>h1 {
 
 .scoreboard {
     display: flex;
-    justify-content: space-between;
 }
 
 
@@ -102,8 +100,6 @@ header>h1 {
 
 
 #intro button {
-    width: 100px;
-    height: 50px;
     background: none;
     border: none;
     color: #2f32c4;
@@ -196,7 +192,6 @@ div.fadeOut {
 
 .rules {
     background-color: #FFE79D;
-    min-width: 50vw;
     height: 30%;
     display: flex;
     justify-content: space-around;
@@ -220,10 +215,8 @@ div.fadeOut {
 
 .rules-btn {
     display: flex;
-    top: -1%;
     justify-content: end;
     padding: 4px 120px;
-    align-items: flex-start;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
