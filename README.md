@@ -8,7 +8,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 ## Features
 
 - **Title Bar**
-  - Featured at the top of the age telling any user the name of the game.
+  - Featured at the top of the page telling any user the name of the game.
   - The title bar has a black background and white. this color choice means there is a lot of contrast between the background and foreground.
 ![title bar](https://user-images.githubusercontent.com/95313496/161865791-78490136-d025-4af0-a65f-2ef28147f849.jpg)
 
@@ -48,12 +48,12 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 - **Choices**
   - The image on the left is the player's choice.
   - The image on the right is the computer's choice.
-  - This is used to help people see who has one the turn.
+  - This is used to help people see who has won the turn.
  
  
  ### Features Left to Implement
  
- One feature I would like to implement is so the score increments by 1 then the user tells who one with a modal and once they click ok the web page would reload.
+ One feature I would like to implement is so the score increments by 1 then the user tells who's won with a modal and once they click ok the web page would reload.
  
  ## Testing
 - I have tested that this page works in different browsers: Chrome, Edge, safari, and firefox
@@ -68,7 +68,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 - I had to find a way to do that but I went around the houses and could not find the right way 
 - Till I thought about changing the source and then it was easier to fix
 - I then had to put it in the right function which meant that I tried to put in many functions till I thought about 
-- then I asked myself when doing the decisions get made that were in the game function and put it in there using the variables that were stated and it worked.
+Then I asked myself when making the decisions that were in the game function and put it in there using the variables that were stated and it worked.
  
  ### Validator Testing
  **HTML validator**
@@ -80,12 +80,12 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
   ![Screenshot 2022-04-07 075547](https://user-images.githubusercontent.com/95313496/162141621-d2148d69-23fc-4e13-a67f-84472e8b0dbd.png)
 
   **Javascript Validator**
-  - no errors were found while doing js hint validator 
+  - no errors were found while doing the js hint validator 
   - The metrics of this website were as follows: 
     - There are 20 functions
-    - Functions with the largest signature take 2 arguements while the median is 0.
+    - Functions with the largest signature take 2 arguments while the median is 0.
     - Largest function has 6 statements in it while the median is 1 
-    - The most complex function has a cyclomatic value of 26 while the median is 1 .
+    - The most complex function has a cyclomatic value of 26 while the median is 1.
 ![Screenshot 2022-04-07 080420](https://user-images.githubusercontent.com/95313496/162141535-8c7cfecf-44bc-4b9e-b833-1240739f517b.png)
 
  **Lighthouse**
@@ -94,7 +94,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 
  
  ### Unfixed bugs
-  light house has picked up that this is not to best practise and i would lick to fix it when i can 
+  The lighthouse has picked up that this is not to best practice and I would like to add it when I can 
   ![image](https://user-images.githubusercontent.com/95313496/162154031-abf61693-158b-425f-be22-ba83f073acfd.png)
 
   
@@ -121,4 +121,4 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
  
  
  
- 
+
