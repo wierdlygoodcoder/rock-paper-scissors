@@ -1,3 +1,5 @@
+/*variables*/
+
 let playerScore = 0;
 let computerScore = 0;
 let userscoreDiv = document.getElementById("playerscore");
@@ -15,15 +17,19 @@ let modalBtn = document.querySelector(".rules-btn");
 let modalBg = document.querySelector(".rules-bg");
 let modalClose = document.querySelector(".close");
 
+/*computer choice*/
+
 function computerChoice() {
     let choices = ['paper', 'rock', 'scissors', 'lizard', 'spock'];
     let randomNum = Math.floor(Math.random() * choices.length);
     return choices[randomNum];
 }
-
+/*change image when choice is made*/
 function changeImage(imgName, target) {
     target.src = `assets/images/${imgName}.png`;
 }
+
+/*makes rock paper scissors lizard or spock capitlized*/
 
 function convertToCapitals(word) {
     if (word === "rock") return "Rock";
@@ -33,6 +39,7 @@ function convertToCapitals(word) {
     return "Scissors";
 }
 
+/*increase the sore of who ever wins and then makes a comment to say whom won drawed or losed*/
 
 function win(userChoice, compChosse) {
     playerScore++;
@@ -56,14 +63,14 @@ function lose(userChoice, compChosse) {
         gameOverFunction('computer');
     }
 }
-
+/*tells the user that they have it the score limit and that the game will reset and the can play agin if they would like*/
 function gameOverFunction(winner) {
     alert(`Well done. ${winner}! Click OK/Close to restart the game.`);
     setTimeout(() => {
         location.reload();
     }, 2000);
 }
-
+/*game logic compare the computer choice to the user choice and then will use the function that it is told to*/
 function game(userChoice) {
     let compChosse = computerChoice();
     changeImage(userChoice, playerHand);
@@ -101,7 +108,7 @@ function game(userChoice) {
             draw(userChoice, compChosse);
     }
 }
-
+/*makes the choices clickable and useable by the functions*/
 function main() {
     rockSpan.addEventListener('click', function () {
         game("rock");
@@ -126,7 +133,7 @@ function main() {
 
 main();
 
-
+/* fade in and out */
 let intro = document.getElementById('intro');
 document.getElementById('play').addEventListener('click', function () {
     intro.classList.toggle('fade');
@@ -136,7 +143,7 @@ let match = document.getElementById('match');
 document.getElementById('play').addEventListener('click', function () {
     match.classList.toggle('fadeIn');
 });
-
+/* model functions */
 modalBtn.addEventListener('click', function () {
     modalBg.classList.add('bg-active');
 });
@@ -144,3 +151,4 @@ modalBtn.addEventListener('click', function () {
 modalClose.addEventListener('click', function () {
     modalBg.classList.remove('bg-active');
 });
+/*javascript end*/
