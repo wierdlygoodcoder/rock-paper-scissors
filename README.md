@@ -9,7 +9,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 
 - **Title Bar**
   - Featured at the top of the page telling any user the name of the game.
-  - The title bar has a black background and white. this color choice means there is a lot of contrast between the background and foreground.
+  - The title bar has a black background and white. this colour choice means there is a lot of contrast between the background and foreground.
 ![title bar](https://user-images.githubusercontent.com/95313496/161865791-78490136-d025-4af0-a65f-2ef28147f849.jpg)
 
 - **Rules Button**
@@ -20,7 +20,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 ![rules button](https://user-images.githubusercontent.com/95313496/161866484-74387243-5234-45a2-b7e7-820e1e769936.jpg)
 
 - **Scoreboard**
-  - On the left is where the score is for the player and it increments by one every time the player wins.
+  - On the left is where the score is for the player and it increases by one every time the player wins.
   - On the right is the computer score and every time that the player loses the computer score increases by one.
   - There is a limit of a score of 5.
   - The score increases to 5 after the user clicks ok/close on the pop-up.
@@ -53,7 +53,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
  
  ### Features Left to Implement
  
- One feature I would like to implement is so the score increments by 1 then the user tells who's won with a modal and once they click ok the web page would reload.
+ One feature I would like to implement is so the score increases by 1 then the user tells who's won with a modal and once they click ok the web page would reload.
  
  ## Testing
 - I have tested that this page works in different browsers: Chrome, Edge, safari, and firefox
