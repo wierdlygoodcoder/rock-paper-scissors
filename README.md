@@ -90,10 +90,13 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 
  **Lighthouse**
 - I have run lighthouse on the website 
+![Screenshot 2022-04-07 091848](https://user-images.githubusercontent.com/95313496/162154095-02a549dd-733d-41d1-b3ca-e7ddf17211cb.png)
 
  
  ### Unfixed bugs
-  No unfixed bugs 
+  light house has picked up that this is not to best practise and i would lick to fix it when i can 
+  ![image](https://user-images.githubusercontent.com/95313496/162154031-abf61693-158b-425f-be22-ba83f073acfd.png)
+
   
  
  ## Deployment
