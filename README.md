@@ -116,7 +116,7 @@ This web-based game is for anyone that is looking for a nice and easy way to rel
 - I have taken elements from  [here](https://youtu.be/jaVNP3nIAv0) to help with the javascript. 
 
 **Media**
-- I have taken elements from this website for the rock paper scissors
+- I have taken elements from this [website](http://clipart-library.com/art-scissors.html) for the rock paper scissors
 - I also used font awesome to use as a help button.
  
  
